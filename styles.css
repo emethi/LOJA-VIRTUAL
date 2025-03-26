@@ -76,29 +76,35 @@ body {
     text-align: right;
 }
 
-/* Responsividade do cabeçalho ajustada */
+/* Responsividade do cabeçalho ajustada para manter layout horizontal */
 @media (max-width: 768px) {
+    .header {
+        padding: 10px 0; /* Reduz padding vertical para economizar espaço */
+    }
     .header .container {
-        display: flex; /* Mantém o layout em linha */
+        display: flex; /* Garante que o layout permaneça horizontal */
         justify-content: space-between;
         align-items: center;
-        padding: 0 10px; /* Adiciona um leve padding lateral para evitar que fique muito apertado */
+        width: 95%; /* Aumenta um pouco a largura para melhor ajuste */
     }
     .logo-container {
-        flex: 1; /* Mantém a proporção */
+        flex: 1;
         margin: 0; /* Remove margens extras */
     }
     .nav-menu ul {
-        gap: 10px; /* Reduz o espaçamento entre os itens do menu */
+        gap: 15px; /* Reduz o espaçamento entre itens do menu */
     }
     .nav-menu a {
-        font-size: 0.9rem; /* Reduz levemente o tamanho da fonte para caber melhor */
+        font-size: 0.85rem; /* Reduz o tamanho da fonte para caber melhor */
     }
-    .nav-left, .nav-right {
-        flex: 1; /* Mantém a proporção */
+    .nav-left {
+        text-align: left;
+    }
+    .nav-right {
+        text-align: right;
     }
     .logo {
-        max-width: 40px; /* Reduz levemente o tamanho do logo em telas menores */
+        max-width: 40px; /* Reduz o tamanho do logo em telas menores */
     }
 }
 
