@@ -1,0 +1,199 @@
+/* Reset básico para consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('Gemini_Generated_Image_kab1uckab1uckab1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Container reutilizável */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* -------SEÇÃO CABEÇALHO-------- */
+.header {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    max-width: 50px; /* Tamanho ajustável pelo lojista */
+    height: auto;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+.nav-left, .nav-right {
+    flex: 1;
+}
+
+.nav-left {
+    text-align: left;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+/* Responsividade do cabeçalho */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-container {
+        margin: 10px 0;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-left, .nav-right {
+        text-align: center;
+    }
+}
+
+/* -------SEÇÃO BANNER DE CAPA-------- */
+.hero-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dfba00;
+    position: relative;
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade do banner */
+@media (max-width: 768px) {
+    .banner-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/* -------SEÇÃO CORPO PRINCIPAL-------- */
+.main-content {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.entry-container {
+    text-align: center;
+}
+
+.entry-button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.door-image {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    background-color: #ffd500;
+}
+
+.entry-button:hover .door-image {
+    transform: scale(1.05);
+}
+
+/* Responsividade do corpo */
+@media (max-width: 768px) {
+    .door-image {
+        width: 200px;
+    }
+    .button-text {
+        font-size: 1rem;
+    }
+}
+
+/* -------SEÇÃO RODAPÉ-------- */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsividade do rodapé */
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animações de transição */
+body {
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
