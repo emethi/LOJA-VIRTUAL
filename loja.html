@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore nosso catálogo de produtos elegantes e delicados na loja virtual.">
+    <meta name="keywords" content="loja virtual, produtos elegantes, cama, banho, decoração, roupas">
+    <meta name="author" content="xAI">
+    <meta property="og:title" content="Catálogo | Loja Virtual">
+    <meta property="og:description" content="Descubra produtos incríveis em nossa loja virtual!">
+    <meta property="og:image" content="./assets/preview-image.jpg">
+    <meta property="og:url" content="https://sua-loja-virtual.com/loja.html">
+    <meta property="og:type" content="website">
+    <title>Loja | Loja Virtual</title>
+
+    <link rel="stylesheet" href="loja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header fixed-header">
+        <div class="container">
+            <nav class="nav-menu nav-left" role="navigation">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+            <div class="logo-container">
+                <img src="Gemini_Generated_Image_3r025n3r025n3r02.jpeg" alt="Logotipo da loja" class="logo" role="img" aria-label="Logotipo da loja">
+            </div>
+            <nav class="nav-menu nav-right" role="navigation">
+                <ul>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ícone do Carrinho -->
+    <div class="cart-icon">
+        <img src="shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).png" alt="Ícone do Carrinho" id="cart-toggle">
+        <span id="cart-count">0</span>
+        <p id="cart-label">Ver Carrinho</p>
+    </div>
+
+    <!-- Carrinho Lateral -->
+    <aside class="cart-sidebar hidden">
+        <h3>Carrinho</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total">R$ 0,00</span></p>
+        </div>
+        <button id="checkout-btn">Prosseguir com Pedido</button>
+        <button id="close-cart">Fechar</button>
+    </aside>
+
+    <!-- Navegação das seções -->
+    <nav class="category-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#cama">Cama</a></li>
+                <li><a href="#banho">Banho</a></li>
+                <li><a href="#decoracao">Decoração</a></li>
+                <li><a href="#roupas-femininas">Roupas Femininas</a></li>
+                <li><a href="#roupas-masculinas">Roupas Masculinas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content shop-content">
+        <!-- Seção Cama -->
+        <section id="cama" class="category-section">
+            <div class="category-header cama-header">
+                <h2>Cama</h2>
+            </div>
+            <div class="products-grid container">
+                <div class="product-card">
+                    <img src="Gemini_Generated_Image_kab1uckab1uckab1.jpeg" alt="Jogo de Cama Floral">
+                    <h3>Jogo de Cama Floral</h3>
+                    <p>Jogo de cama 100% algodão.</p>
+                    <span class="price">R$ 199,90</span>
+                    <button class="add-to-cart" data-name="Jogo de Cama Floral" data-price="199.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 160x200 cm (casal).</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="cama.jpeg" alt="Jogo de Cama Liso">
+                    <h3>Jogo de Cama Liso</h3>
+                    <p>Conforto em 100% algodão.</p>
+                    <span class="price">R$ 179,90</span>
+                    <button class="add-to-cart" data-name="Jogo de Cama Liso" data-price="179.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 160x200 cm. Cor: Bege.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-cama3.jpg" alt="Travesseiro Ortopédico">
+                    <h3>Travesseiro Ortopédico</h3>
+                    <p>Suporte para uma boa noite.</p>
+                    <span class="price">R$ 89,90</span>
+                    <button class="add-to-cart" data-name="Travesseiro Ortopédico" data-price="89.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 50x70 cm.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-cama4.jpg" alt="Cobertor Felpudo">
+                    <h3>Cobertor Felpudo</h3>
+                    <p>Quente e macio.</p>
+                    <span class="price">R$ 129,90</span>
+                    <button class="add-to-cart" data-name="Cobertor Felpudo" data-price="129.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 150x200 cm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Banho -->
+        <section id="banho" class="category-section">
+            <div class="category-header banho-header">
+                <h2>Banho</h2>
+            </div>
+            <div class="products-grid container">
+                <div class="product-card">
+                    <img src="product-toalha1.jpg" alt="Toalha de Banho Luxo">
+                    <h3>Toalha de Banho Luxo</h3>
+                    <p>Toalha felpuda 100% algodão.</p>
+                    <span class="price">R$ 89,90</span>
+                    <button class="add-to-cart" data-name="Toalha de Banho Luxo" data-price="89.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 70x140 cm.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-toalha2.jpg" alt="Toalha de Rosto">
+                    <h3>Toalha de Rosto</h3>
+                    <p>Macia e compacta.</p>
+                    <span class="price">R$ 29,90</span>
+                    <button class="add-to-cart" data-name="Toalha de Rosto" data-price="29.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 40x70 cm.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-toalha3.jpg" alt="Roupão de Banho">
+                    <h3>Roupão de Banho</h3>
+                    <p>Conforto após o banho.</p>
+                    <span class="price">R$ 149,90</span>
+                    <button class="add-to-cart" data-name="Roupão de Banho" data-price="149.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: M.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-toalha4.jpg" alt="Kit de Toalhas">
+                    <h3>Kit de Toalhas</h3>
+                    <p>2 toalhas de banho e rosto.</p>
+                    <span class="price">R$ 99,90</span>
+                    <button class="add-to-cart" data-name="Kit de Toalhas" data-price="99.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 70x140 cm e 40x70 cm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Decoração -->
+        <section id="decoracao" class="category-section">
+            <div class="category-header decoracao-header">
+                <h2>Decoração</h2>
+            </div>
+            <div class="products-grid container">
+                <div class="product-card">
+                    <img src="product-decor1.jpg" alt="Vaso de Cerâmica">
+                    <h3>Vaso de Cerâmica</h3>
+                    <p>Peça delicada e sofisticada.</p>
+                    <span class="price">R$ 59,90</span>
+                    <button class="add-to-cart" data-name="Vaso de Cerâmica" data-price="59.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Altura: 20 cm.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-decor2.jpg" alt="Almofada Decorativa">
+                    <h3>Almofada Decorativa</h3>
+                    <p>Estampada e confortável.</p>
+                    <span class="price">R$ 49,90</span>
+                    <button class="add-to-cart" data-name="Almofada Decorativa" data-price="49.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 40x40 cm.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-decor3.jpg" alt="Luminária de Mesa">
+                    <h3>Luminária de Mesa</h3>
+                    <p>Iluminação suave e elegante.</p>
+                    <span class="price">R$ 79,90</span>
+                    <button class="add-to-cart" data-name="Luminária de Mesa" data-price="79.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Altura: 30 cm.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-decor4.jpg" alt="Quadro Minimalista">
+                    <h3>Quadro Minimalista</h3>
+                    <p>Arte moderna para sua casa.</p>
+                    <span class="price">R$ 69,90</span>
+                    <button class="add-to-cart" data-name="Quadro Minimalista" data-price="69.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Medidas: 30x40 cm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Roupas Femininas -->
+        <section id="roupas-femininas" class="category-section">
+            <div class="category-header roupas-femininas-header">
+                <h2>Roupas Femininas</h2>
+            </div>
+            <div class="products-grid container">
+                <div class="product-card">
+                    <img src="product-roupa-f1.jpg" alt="Vestido Floral">
+                    <h3>Vestido Floral</h3>
+                    <p>Leve e fluido.</p>
+                    <span class="price">R$ 129,90</span>
+                    <button class="add-to-cart" data-name="Vestido Floral" data-price="129.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: M.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-roupa-f2.jpg" alt="Blusa de Seda">
+                    <h3>Blusa de Seda</h3>
+                    <p>Elegante e confortável.</p>
+                    <span class="price">R$ 99,90</span>
+                    <button class="add-to-cart" data-name="Blusa de Seda" data-price="99.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: P.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-roupa-f3.jpg" alt="Calça Jeans">
+                    <h3>Calça Jeans</h3>
+                    <p>Corte moderno e versátil.</p>
+                    <span class="price">R$ 159,90</span>
+                    <button class="add-to-cart" data-name="Calça Jeans" data-price="159.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: 38.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-roupa-f4.jpg" alt="Jaqueta de Couro">
+                    <h3>Jaqueta de Couro</h3>
+                    <p>Estilo e sofisticação.</p>
+                    <span class="price">R$ 199,90</span>
+                    <button class="add-to-cart" data-name="Jaqueta de Couro" data-price="199.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: M.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Roupas Masculinas -->
+        <section id="roupas-masculinas" class="category-section">
+            <div class="category-header roupas-masculinas-header">
+                <h2>Roupas Masculinas</h2>
+            </div>
+            <div class="products-grid container">
+                <div class="product-card">
+                    <img src="product-roupa-m1.jpg" alt="Camisa Social">
+                    <h3>Camisa Social</h3>
+                    <p>Corte slim para eventos.</p>
+                    <span class="price">R$ 149,90</span>
+                    <button class="add-to-cart" data-name="Camisa Social" data-price="149.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: G.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-roupa-m2.jpg" alt="Camiseta Básica">
+                    <h3>Camiseta Básica</h3>
+                    <p>Conforto casual.</p>
+                    <span class="price">R$ 39,90</span>
+                    <button class="add-to-cart" data-name="Camiseta Básica" data-price="39.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: M.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-roupa-m3.jpg" alt="Calça Cargo">
+                    <h3>Calça Cargo</h3>
+                    <p>Estilo urbano e prático.</p>
+                    <span class="price">R$ 139,90</span>
+                    <button class="add-to-cart" data-name="Calça Cargo" data-price="139.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: 42.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="product-roupa-m4.jpg" alt="Blusão de Moletom">
+                    <h3>Blusão de Moletom</h3>
+                    <p>Quente e estiloso.</p>
+                    <span class="price">R$ 109,90</span>
+                    <button class="add-to-cart" data-name="Blusão de Moletom" data-price="109.90">Adicionar</button>
+                    <button class="view-details">Detalhes</button>
+                    <div class="product-details hidden">
+                        <p>Tamanho: M.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer fixed-footer">
+        <div class="container">
+            <p>© 2025 Loja Virtual. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="loja.js"></script>
+</body>
+</html>
